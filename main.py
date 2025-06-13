@@ -33,22 +33,20 @@ def omikuji():
     
     return {"result" : omikuji_list[random.randrange(10)]}
 
-from fastapi.responses import HTMLResponse #インポート
-
 @app.get("/index")
 def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <title>23FI009 課題9-1</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>てすと</h1>
         </body>
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
 
-@app.post("/present")
+@app.post("/comment")
 async def give_present(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}
+    return {"response": f"課題9-2 {comment}デプロイ待ち時間長すぎる；；"}

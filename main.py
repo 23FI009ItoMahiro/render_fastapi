@@ -38,10 +38,11 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>23FI009 課題9-1</title>
+            <title>23FI009</title>
         </head>
         <body>
-            <h1>てすと</h1>
+            <h1>課題9-2</h1>
+            <p>てすと</p>
         </body>
     </html>
     """
@@ -49,4 +50,4 @@ def index():
 
 @app.post("/comment")
 async def give_comment(comment):
-    return {"response": f"課題9-2 {comment}デプロイ待ち時間長すぎる；；"}
+    return {"response": f"課題9-2 コメント：{comment}"}

@@ -48,5 +48,5 @@ def index():
     return HTMLResponse(content=html_content, status_code=200)
 
 @app.post("/comment")
-async def give_present(present):
+async def give_comment(comment):
     return {"response": f"課題9-2 {comment}デプロイ待ち時間長すぎる；；"}
